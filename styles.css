@@ -159,7 +159,27 @@ h1{
   .wrapper .button:nth-child(3) span{
     color: #E1306C;
   }
-
+  h1 span { 
+    color: white; 
+    font: 24px/45px Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px; 
+ }
+ h2 span { 
+  color: white; 
+  font: 24px/45px Sans-Serif; 
+  letter-spacing: -1px;  
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
+}
+h3 span { 
+  color: white; 
+  font: 24px/45px Sans-Serif; 
+  letter-spacing: -1px;  
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
+}
 
 
 

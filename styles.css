@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
   }
@@ -13,10 +11,7 @@ html,body {
     place-items: center;
     background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
-body {
-    margin: 0;
-    padding: 0; 
-}
+
 .banner{
     width: 100%;
     height: 100vh;
@@ -74,9 +69,7 @@ ul {
 .navigation {
     float: left;
 }
-a {
 
-}
 #section1 {
     color: white;
     text-align: center;
@@ -113,6 +106,7 @@ a {
     width: 100%;
     border-style: groove;
 }
+/*
 .text-block {
   bottom: 20px;
   right: 20px;
@@ -124,11 +118,13 @@ a {
   margin: 200px;
   border-radius: 5px;
 }
+*/
 h1{
     margin: 100px;
     text-align: center;
     padding: 0;
 }
+
 .wrapper .button{
     display: inline-block;
     height: 60px;
@@ -188,14 +184,44 @@ h1{
   .wrapper .button:nth-child(3) span{
     color: #E1306C;
   }
-  h1 span { 
-    color: white; 
-    font: 24px/45px Sans-Serif; 
-    letter-spacing: -1px;  
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px; 
-    border-radius: 5px;
- }
+
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  position: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #ff0000;
+  color: white;
+}
+.fa-instagram {
+  background: #E1306C;
+  color: white;
+}
+.fa-spotify {
+  background: black;
+  color: #81b71a;
+}
+h1 span { 
+  color: white; 
+  font: 24px/45px Sans-Serif; 
+  letter-spacing: -1px;  
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
+  border-radius: 5px;
+}
  h2 span { 
   color: white; 
   font: 24px/45px Sans-Serif; 

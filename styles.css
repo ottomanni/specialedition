@@ -35,11 +35,36 @@ nav {
 .objects {
     padding: 20px;
     margin: 20px;
-    width: 100px;
+    width: 170px;
     display: block;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    background-image: linear-gradient(to right, #6d6d6d, #735c5c 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.objects:before {
+  content: '';
+  background: #676767;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.objects:hover {
+  background-position: 0;
+}
+.objects:hover::before{
+  width: 100%;
 }
 ul {
     padding: 0;

@@ -14,7 +14,7 @@ html,body {
 
 .banner{
     width: 100%;
-    height: 110vh;
+    height: 180vh;
     background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.45)),url(background.jpg);
     background-size: cover;
     background-position: center;
@@ -85,7 +85,7 @@ ul {
 #section2 {
     color: white;
     text-align: center;
-    height: 1400px;
+    height: 1500px;
     background: url(2.jpg);
     background-size: cover;
     background-position: top;
@@ -94,17 +94,59 @@ ul {
     width: 100%;
     border-style: groove;
 }
+/*
 #section3 {
     color: white;
     text-align: center;
-    height: 800px;
+    height: 1200px;
     display: inline-block;
-    background: url(3.jpg);
+    background: url(4.png);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
     width: 100%;
     border-style: groove;
+}
+*/
+#section4 {
+  text-align: center;
+  background: url(4.png);
+}
+
+#section4 h3 {
+  margin-top: 20px;
+}
+
+#section4 h1, #section3 h1 span {
+  font-size: 18px;
+  margin: 5px;
+}
+
+#section4 h1 {
+  display: inline-block;
+  width: 30%; /* Adjust width as needed */
+}
+
+#section4 h1 span {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #section4 h1 {
+      width: 100%;
+  }
+}
+#section3 {
+  color: white;
+  text-align: center;
+  height: 800px;
+  display: inline-block;
+  background: url(3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  width: 100%;
+  border-style: groove;
 }
 /*
 .text-block {

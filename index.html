@@ -8,6 +8,38 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Parallax effect CSS */
+        .parallax {
+            position: relative;
+            height: 100vh;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .parallax-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translateZ(0);
+            will-change: transform;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="banner">
@@ -19,15 +51,18 @@
                 <li><a class="objects" href="section4.html">Esimerkki biisilistaa</a></li>
             </ul>
         </nav>
-        <!-- Etusivu - Banner Section -->
-        <div id="section1">
-            <h1><span>LauraKristiina & Special Edition Band</span></h1>
-            <h3>
-                <span>Teemme keikkoja erilaisiin tapahtumiin.</span><br>
-                <span>Häät, syntymäpäivät, pikkujoulut tai yritystilaisuudet.</span><br>
-                <span>Mitä vain, me hostaamme loistavan tunnelman juhliisi!</span><br><br>
-                <span>Teemme bilekeikkojen lisäksi omaa musiikkia nimellä LauraKristiina.</span>
-            </h3>
+        <!-- Etusivu - Parallax Banner Section -->
+        <div id="section1" class="parallax">
+            <div class="parallax-image" style="background-image: url('path/to/highres-image.jpg');"></div>
+            <div class="content">
+                <h1><span>LauraKristiina & Special Edition Band</span></h1>
+                <h3>
+                    <span>Teemme keikkoja erilaisiin tapahtumiin.</span><br>
+                    <span>Häät, syntymäpäivät, pikkujoulut tai yritystilaisuudet.</span><br>
+                    <span>Mitä vain, me hostaamme loistavan tunnelman juhliisi!</span><br><br>
+                    <span>Teemme bilekeikkojen lisäksi omaa musiikkia nimellä LauraKristiina.</span>
+                </h3>
+            </div>
         </div>
     </div>
 
@@ -56,38 +91,4 @@
     <div id="section3" class="section">
         <div class="text-block">
             <h1><span>Yhteydenotto</span></h1>
-            <h3><span>Puhelin: <a href="tel:0443375946" style="color:white">044-3375946</a></span></h3>
-            <h3><span>Sähköpostit: <a href="mailto:otto_manninen123@hotmail.com" style="color:white">otto_manninen123@hotmail.com</a></span></h3>
-            <h3><span><a href="mailto:lk.laurakristiina@gmail.com" style="color:white">lk.laurakristiina@gmail.com</a></span></h3>
-            <br>
-            <h2><span>Lisää meistä:</span></h2>
-            <div class="social-links">
-                <a href="https://www.facebook.com/specialeditionband" class="fa fa-facebook"></a>
-                <a href="https://www.youtube.com/channel/UCxHMgF5RUNRKkRSenWbmyHw" class="fa fa-youtube"></a>
-                <a href="https://www.instagram.com/specialedition_band/" class="fa fa-instagram"></a>
-                <a href="https://open.spotify.com/artist/4iwNsbIxtUy8HgSmzqfFPW" class="fa fa-spotify"></a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Asiakaspalautteet Section -->
-    <div class="feedback-section">
-        <h2>Asiakaspalautteita</h2>
-        <div class="feedback-container">
-            <div class="feedback-item">
-                <p>”Special Edition esiintyi häissämme ja meiltä bändille täydet suositukset! Mahtava bändi ja super hyvä meininki! Erityismaininta vielä lahjakkaasta LauraKristiinasta, joka toteutti toivebiisimme niin kauniisti. Kiitos!”</p>
-            </div>
-            <div class="feedback-item">
-                <p>"Special Edition toimi meidän hääkeikkabändinä. Bändi kuunteli toiveemme tärkeälle päivälle ja toteutti ne ylittäen kaikki toiveemme. Ammattitaitosta musiikkia, suurella sydämellä."</p>
-            </div>
-            <div class="feedback-item">
-                <p>"Special Edition tarjoili ihan mahtavaa menoa ja osaamista 50v-synttärijuhlissani. Ei jäänyt ”mummotkaan” kylmäksi ja tanssilattialla oli tungosta aina teineistä senioreihin. Sain todella paljon kehuja onnistuneista juhlista ja bändistä. Kyllä todella loistava livebändi oli tärkein tekijä juhlien onnistumiseksi! Tämä bändi kyllä nostattaa tunnelman ja korkkarit kattoon! Erittäin vahva suositus, arvosanaksi reippaasti yli täydet pisteet!!!"</p>
-            </div>
-            <div class="feedback-item">
-                <p>"Iso kiitos teille kaikille, saitte ihan mielettömät bileet meille aikaiseksi!"</p>
-            </div>
-        </div>
-    </div>
-
-</body>
-</html>
+            <h3><span>

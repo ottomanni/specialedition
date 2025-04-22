@@ -282,41 +282,5 @@ h3 span {
 }
  
 
-/* Asiakaspalautteet osion tyyli */
-.feedback-section {
-  background-color: #000; /* Musta tausta */
-  color: #fff; /* Valkoinen teksti */
-  padding: 50px 0; /* Ylä- ja alatyhjennys */
-  text-align: center; /* Keskittää otsikon */
-}
 
-.feedback-section h2 {
-  font-size: 2em;
-  margin-bottom: 30px; /* Väli otsikon ja palautteiden välissä */
-}
 
-.feedback-container {
-  display: flex;
-  flex-wrap: wrap; /* Palautteet menevät riveittäin tarvittaessa */
-  justify-content: center; /* Keskittää palautteet */
-  gap: 20px; /* Väli neliöiden välillä */
-}
-
-.feedback-item {
-  background-color: #fff; /* Valkoinen neliö */
-  color: #000; /* Musta teksti */
-  padding: 20px;
-  width: 300px; /* Neliön leveys */
-  border-radius: 10px; /* Pyöristetyt reunat */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hieman varjoa */
-  font-size: 1em;
-  transition: transform 0.3s ease; /* Animaatio efektille */
-}
-
-.feedback-item:hover {
-  transform: scale(1.05); /* Hieman suurenee hoverissa */
-}
-
-.feedback-item p {
-  font-style: italic; /* Teksti kursivoituu */
-}

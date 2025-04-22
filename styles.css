@@ -18,14 +18,21 @@ html, body {
 /* ---------- Banner / Hero ---------- */
 .banner {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; /* Täyttää koko näytön korkeuden */
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('background.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  padding: 4rem 2rem;
+  padding: 2rem; /* Pienentää väliä reunasta */
+  box-sizing: border-box;
+}
+
+.banner .content-block {
+  max-width: 1200px; /* Asetetaan maksimileveys */
+  width: 100%; /* Täyttää tilan leveydeltään */
+  padding: 2rem; /* Lisää tilaa reunoille */
 }
 
 /* ---------- Navigaatio ---------- */

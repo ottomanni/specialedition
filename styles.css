@@ -12,4 +12,173 @@ html, body {
   background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
   color: #111;
   font-size: 16px;
-  line-height:
+  line-height: 1.6;
+}
+
+/* ---------- Banner / Hero ---------- */
+.banner {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('background.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+/* ---------- Navigaatio ---------- */
+nav {
+  width: 100%;
+  background: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.objects {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.objects:hover {
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.objects::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.objects:hover::after {
+  width: 100%;
+}
+
+/* ---------- Sektiot ---------- */
+section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Esimerkki responsiivisesta taustakuvallisesta osasta */
+#section1, #section2, #section3 {
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+#section1 { background-image: url('1.jpg'); }
+#section2 { background-image: url('2.jpg'); }
+#section3 { background-image: url('3.jpg'); }
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 span, h2 span, h3 span {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+}
+
+/* ---------- Napit ---------- */
+.button {
+  display: inline-block;
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #e6b800;
+}
+
+/* ---------- Responsiivisuus ---------- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .banner {
+    padding: 2rem 1rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ---------- Asiakaspalautteet osion tyyli ---------- */
+.feedback-section {
+  background-color: #000; /* Musta tausta */
+  color: #fff; /* Valkoinen teksti */
+  padding: 50px 0; /* Ylä- ja alatyhjennys */
+  text-align: center; /* Keskittää otsikon */
+}
+
+.feedback-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px; /* Väli otsikon ja palautteiden välissä */
+}
+
+.feedback-container {
+  display: flex;
+  flex-wrap: wrap; /* Palautteet menevät riveittäin tarvittaessa */
+  justify-content: center; /* Keskittää palautteet */
+  gap: 20px; /* Väli neliöiden välillä */
+}
+
+.feedback-item {
+  background-color: #fff; /* Valkoinen neliö */
+  color: #000; /* Musta teksti */
+  padding: 20px;
+  width: 300px; /* Neliön leveys */
+  border-radius: 10px; /* Pyöristetyt reunat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hieman varjoa */
+  font-size: 1em;
+  transition: transform 0.3s ease; /* Animaatio efektille */
+}
+
+.feedback-item:hover {
+  transform: scale(1.05); /* Hieman suurenee hoverissa */
+}
+
+.feedback-item p {
+  font-style: italic; /* Teksti kursivoituu */
+}

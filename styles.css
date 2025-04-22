@@ -182,6 +182,64 @@ h1 span, h2 span, h3 span {
 .feedback-item p {
   font-style: italic; /* Teksti kursivoituu */
 }
+
+/* ---------- Esimerkki biisilista osio ---------- */
+#section4 {
+  background-color: #f4f4f4; /* Vaaleanharmaa tausta */
+  color: #333; /* Tumma teksti */
+  padding: 50px 0; /* Ylä- ja alatyhjennys */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Väli otsikon ja listan välissä */
+  font-weight: 700;
+  color: #333;
+}
+
+.song-list {
+  list-style-type: none; /* Poistaa pistetyt listat */
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.song-list li {
+  background-color: #fff; /* Valkoinen tausta */
+  padding: 10px 20px;
+  border-radius: 8px; /* Pyöristetyt kulmat */
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Varjo */
+  transition: background-color 0.3s ease;
+}
+
+.song-list li:hover {
+  background-color: #ffcc00; /* Keltainen hover-efekti */
+  color: white; /* Tekstin väri muuttuu hoverissa */
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .song-list {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ---------- Parallax ----------- */
 .parallax {
   position: relative;
   height: 100vh;
